@@ -411,7 +411,7 @@ class App extends React.Component {
             <Grid item lg={12}>
               <Button variant="contained" disabled={this.state.showTicket} onClick={() => this.genTicket()}
                 style={{ height: 50, width: 100 }}>
-                Get a Ticket</Button>
+                Get Tickets</Button>
             </Grid>
             <Grid item lg={12} hidden={!(this.state.showTicket)}>
               <Button variant="contained" onClick={() => this.hideTicket()}
