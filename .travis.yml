@@ -25,7 +25,7 @@ deploy:
   bundle_type: zip
   application: tambdeploy
   deployment_group: mycodedeploygroup
-  region: us-eat-2
+  region: us-east-2
   on: *2
 
 script:
