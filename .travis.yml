@@ -13,7 +13,7 @@ deploy:
   local_dir: dpl_cd_upload
   skip_cleanup: true
   on: &2
-    repo: yaggarwa/tamb
+    repo: travis-ci/dpl
   bucket: mytamb-bucket01
   region: us-east-2
 
@@ -28,10 +28,8 @@ deploy:
   region: us-east-2
   on: *2
 
-before_script:
-  - npm run build
-
 script:
+  - npm run build
   - zip -r latest *
   - mkdir -p dpl_cd_upload
   - mv latest.zip dpl_cd_upload/latest.zip
